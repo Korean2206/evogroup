@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/user/layout/layout::areas(~{::title},~{::main})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolshop - Sign up</title>
+</head>
+<body>
+    <main>
+        <main>
+            <section class="h-100 gradient-form" >
+                <div class="container  h-100" style="padding-bottom: 100px;">
+                  <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-xl-10">
+                      <div class="card text-black" style="border-radius: 3%;">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                  <img src="/images/logo/login_form.png" style="height:100%;width: 100%;" alt="">
+                              </div>
+                          <div class="col-lg-6">
+                            <div class="card-body p-md-5 mx-md-4">
+              
+                              <div class="text-center">
+                                <img src="/images/logo/logoshop.png"
+                                  style="width: 185px;" alt="logo">
+                                <h4 class="mt-1 mb-5 pb-1">Chào mừng đến với Evol group</h4>
+                              </div>
+              
+                              <form>
+              
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="form2Example11">Username</label>
+                                  <input type="email" id="form2Example11" class="form-control"
+                                    placeholder="Phone number or email address" />
+                                </div>
+              
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="form2Example22">Password</label>
+                                  <input type="password" id="form2Example22" class="form-control" />
+                                </div>
+              
+                                <div class="text-center" style="width: 100%;">
+                                  <button style="width: 100%;background-color: #7F7FD5; color: #fff;padding: 3px 15px;
+                                  line-height: 21px;" class="btn btn-block btn-focus fa-lg " type="button">Đăng ký</button>
+                                </div>
+              
+                                <div class="d-flex align-items-center justify-content-center pb-4 mt-5">
+                                  <p class="mb-0 me-2">Bạn đã có tài khoản?</p>
+                                  <a th:href="@{|/login|}" type="button" class="btn btn-outline-dark btn-focus-purple">Đăng nhập</a>
+                                </div>
+              
+                              </form>
+              
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </main>
+    </main>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/user/layout/layout::areas(~{::title},~{::main})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolshop</title>
+</head>
+
+<body>
+    <main>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/banner/banner1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/banner/banner1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/banner/banner1.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container">
+            <div class="row" style="margin-bottom: 50px; user-select: none; ">
+                <nav class="nav container-nav col-md-12">
+                    <ul>
+                        <li><span>
+                                <img src="/images/design/t-shirt.png" alt="">
+                            </span>
+                            T-Shirt
+                        </li>
+                        <li><span>
+                                <img src="/images/design/jacket.png" alt="">
+                            </span>
+                            jacket</li>
+                        <li><span>
+
+                                <img src="/images/design/jeans.png" alt="">
+                            </span>
+                            Jeans</li>
+                        <li><span>
+
+                                <img src="/images/design/shoes.png" alt="">
+                            </span>
+                            Shoes</li>
+                        <li><span>
+
+                                <img src="/images/design/bag.png" alt="">
+                            </span>
+                            Bag</li>
+                        <li><span>
+
+                                <img src="/images/design/watches.png" alt="">
+                            </span>
+                            Watches</li>
+                        <li><span class="all-category">
+
+                            <i class="bi bi-grid" style="font-size:20px; color:#D9D9D9;"></i>
+                            </span>
+                            All Category</li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="section-product">
+                <div class="row" style="margin-bottom: 15px;">
+                    <span style="font-size:30px;font-weight: bold;">Todays For you</span>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-3" >
+                        <div class="card">
+                            <img src="/images/product/product1.png" style="height:200px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="width: 100%; 
+                              overflow: hidden; 
+                              white-space: nowrap;
+                              text-overflow: ellipsis;">Áo test</h5>
+                              <p class="card-text"><i class="bi bi-star-fill checked"></i>4.9<span style="margin-left: 15px;font-size:11;color: #868686;font-weight: regular;">13 sold</span></p>
+                              <p class="card-text" style="font-size:20px;font-weight: bold;
+                              width: 100%; 
+                                overflow: hidden; 
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                              ">150.000 VNĐ <span style="margin-left: 5px;color: #7F7FD5; font-size:14px;font-weight: 400; text-decoration: line-through;">200.000 VNĐ</span></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3" >
+                        <div class="card" >
+                            <img src="/images/product/product1.png" style="height:200px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="width: 100%; 
+                              overflow: hidden; 
+                              white-space: nowrap;
+                              text-overflow: ellipsis;">Áo test</h5>
+                              <p class="card-text"><i class="bi bi-star-fill checked"></i>4.9<span style="margin-left: 15px;font-size:11;color: #868686;font-weight: regular;">13 sold</span></p>
+                              <p class="card-text" style="font-size:20px;font-weight: bold;">150.000 VNĐ</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3" >
+                        <div class="card" >
+                            <img src="/images/product/product1.png" style="height:200px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="width: 100%; 
+                              overflow: hidden; 
+                              white-space: nowrap;
+                              text-overflow: ellipsis;">Áo test</h5>
+                              <p class="card-text"><i class="bi bi-star-fill checked"></i>4.9<span style="margin-left: 15px;font-size:11;color: #868686;font-weight: regular;">13 sold</span></p>
+                              <p class="card-text" style="font-size:20px;font-weight: bold;">150.000 VNĐ</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3" >
+                        <div class="card" >
+                            <img src="/images/product/product1.png" style="height:200px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="width: 100%; 
+                              overflow: hidden; 
+                              white-space: nowrap;
+                              text-overflow: ellipsis;">Áo test</h5>
+                              <p class="card-text"><i class="bi bi-star-fill checked"></i>4.9<span style="margin-left: 15px;font-size:11;color: #868686;font-weight: regular;">13 sold</span></p>
+                              <p class="card-text" style="font-size:20px;font-weight: bold;">150.000 VNĐ</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-3" >
+                        <div class="card">
+                            <img src="/images/product/product1.png" style="height:200px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="width: 100%; 
+                              overflow: hidden; 
+                              white-space: nowrap;
+                              text-overflow: ellipsis;">Áo test</h5>
+                              <p class="card-text"><i class="bi bi-star-fill checked"></i>4.9<span style="margin-left: 15px;font-size:11;color: #868686;font-weight: regular;">13 sold</span></p>
+                              <p class="card-text" style="font-size:20px;font-weight: bold;">150.000 VNĐ</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3" >
+                        <div class="card" >
+                            <img src="/images/product/product1.png" style="height:200px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="width: 100%; 
+                              overflow: hidden; 
+                              white-space: nowrap;
+                              text-overflow: ellipsis;">Áo test</h5>
+                              <p class="card-text"><i class="bi bi-star-fill checked"></i>4.9<span style="margin-left: 15px;font-size:11;color: #868686;font-weight: regular;">13 sold</span></p>
+                              <p class="card-text" style="font-size:20px;font-weight: bold;">150.000 VNĐ</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3" >
+                        <div class="card" >
+                            <img src="/images/product/product1.png" style="height:200px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="width: 100%; 
+                              overflow: hidden; 
+                              white-space: nowrap;
+                              text-overflow: ellipsis;">Áo test</h5>
+                              <p class="card-text"><i class="bi bi-star-fill checked"></i>4.9<span style="margin-left: 15px;font-size:11;color: #868686;font-weight: regular;">13 sold</span></p>
+                              <p class="card-text" style="font-size:20px;font-weight: bold;">150.000 VNĐ</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3" >
+                        <div class="card" >
+                            <img src="/images/product/product1.png" style="height:200px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="width: 100%; 
+                              overflow: hidden; 
+                              white-space: nowrap;
+                              text-overflow: ellipsis;">Áo test</h5>
+                              <p class="card-text"><i class="bi bi-star-fill checked"></i>4.9<span style="margin-left: 15px;font-size:11;color: #868686;font-weight: regular;">13 sold</span></p>
+                              <p class="card-text" style="font-size:20px;font-weight: bold;">150.000 VNĐ</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row mb-5" style="text-align: center;">
+                    <div class="col">
+                        <p style="font-size: 18px;
+                        font-weight: bold;
+                        color: #fff;
+                        background-color: #7F7FD5;
+                        margin: 0 42%;
+                        border-radius: 14px;
+                        padding: 15px;">Xem thêm</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

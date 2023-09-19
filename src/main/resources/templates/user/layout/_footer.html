@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <footer th:fragment="footer" style="background-color: #191919;width: 100%; z-index: 1; padding: 20px 0;">
+        <a style="cursor: pointer; user-select: none;" id="back-to-top" onclick="backToTopEvent()"></a>        
+        <div class="row" style="color: #fff; margin: 0 50px;">
+            <div class="col-md-3">
+				<p class="footer-text-header"><strong>Địa chỉ</strong></p>
+				<p class="footer-text"><i class="bi bi-pin-map-fill"></i>&ensp;73 Nguyễn Thị Minh Khai, Đà Nẵng, Việt Nam 550000</p>
+			</div>
+			<div class="col-md-3">
+				<p class="footer-text-header"><strong>Vận chuyển</strong></p>
+				<p class="footer-text">Toàn quốc & ngoài nước</p>
+			</div>
+			<div class="col-md-3">
+				<p class="footer-text-header"><strong>Thanh toán</strong></p>
+				<p class="footer-text"><i class="bi bi-bank"></i>&ensp;Chuyển khoản</p>
+				<p class="footer-text"><i class="bi bi-house"></i>&ensp;Thu tiền tại nhà</p>
+			</div>
+			<div class="col-md-3">
+				<p class="footer-text-header"><strong>Kết nối với chúng mình</strong></p>
+				<ul class="social-media footer-text" style="margin-left: -14px">
+					<li>
+						<a href="https://www.tiktok.com/@taimlup" target="_blank">
+							<i class="bi bi-tiktok" style="font-size:2.6rem; color: #fff;"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/taimlup" target="_blank">
+							<i class="bi bi-facebook" style="font-size:2.6rem; color: #fff;"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/taimlup" target="_blank">
+							<i class="bi bi-instagram" style="font-size:2.6rem; color: #fff;"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://m.youtube.com/@TAIMLUP" target="_blank">
+							<i class="bi bi-youtube" style="font-size:2.6rem; color: #fff;"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+        </div>
+    </footer>
+</body>
+</html>
