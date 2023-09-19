@@ -203,3 +203,25 @@ input#header_nav--search {
     color: #fff !important;
 }
 /* end login */
+
+/* begin cart */
+.cart_checkout > li {
+    display: flex;
+    justify-content:space-between;
+}
+table.cart_table td, th  {
+    padding: 20px;
+    text-align: center;
+}
+.table.cart_table > thead > tr:first-child > th:first-child{
+    border-top-left-radius: 30px;
+}
+.table.cart_table tr:first-child > th:last-child{
+    border-top-right-radius: 30px;
+}
+.table.cart_table tr:last-child > td{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* end cart */

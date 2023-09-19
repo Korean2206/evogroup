@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/user/layout/layout::areas(~{::title},~{::main})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolshop - Giỏ hàng</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row " >
+                <div class="col-md-8 "  >
+                    
+                    <table class="table table-secondary cart_table">
+                        <thead>
+                          <tr class="border-dark">
+
+                            <th scope="col"></th>
+                            <th scope="col">Sản phẩm</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Thành tiền</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="border-dark" style="vertical-align: middle;"> 
+                            <th scope="row"><input type="checkbox" name="productSelect" id="productSelect"></th>
+                            <td><img src="/images/product/product1.png" style="width:100px; margin-right: 15px;"  class="card-img-top" alt="...">Áo 2
+                            </td>
+                            <td><input type="number" min=1 value="1"></td>
+                            <td>160.000 vnđ</td>
+                            <td><i class="bi bi-trash"></i></td>
+                          </tr>
+                          <tr class="border-dark" style="vertical-align: middle;"> 
+                            <th scope="row"><input type="checkbox" name="productSelect" id="productSelect"></th>
+                            <td><img src="/images/product/product1.png" style="width:100px; margin-right: 15px;"  class="card-img-top" alt="...">Áo 1
+                            </td>
+                            <td><input type="number" min=1 value="1"></td>
+                            <td>160.000 vnđ</td>
+                            <td><i class="bi bi-trash"></i></td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" style="text-align:unset!important;"> 
+                                <button class="btn btn-dark">Tiếp tục mua hàng</button>
+
+                            </td>     
+                        </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="col-md-4 " style="background-color: #e2e3e5;padding: 20px; height: fit-content;border-radius:30px">
+                    <p style="text-align: center;">TỔNG SỐ ĐƠN HÀNG</p>
+                    <hr style="border: 1px solid #000;">
+                    <ul class="cart_checkout" style="list-style: none;padding: 0; ">
+                        <li><span class="cart_checkout-text">Tạm tính:</span> <span class="cart_checkout-number">320.000 vnđ</span></li>
+                        <li><span class="cart_checkout-text">Khuyến mãi</span> <span class="cart_checkout-number">0 vnđ</span></li>
+                        <hr style="border: 1px solid #000;">
+                        <li><span class="cart_checkout-text">Tổng cộng:</span><span class="cart_checkout-number">320.000 vnđ</span></li>
+                    </ul>
+                    <div style="width: 100%; text-align: end;">
+                        <button class="btn btn-dark">Thanh toán</button>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
