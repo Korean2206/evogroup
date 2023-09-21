@@ -11,7 +11,7 @@
 <body>
     <header th:fragment="header" style="border-bottom: 1px solid #86A8E7;">
         <div class="app_header">
-            <ul>
+            <ul class="app_header_contact">
                 <li><i style="color: #7F7FD5;" class="fa fa-phone" aria-hidden="true"></i>
                     0862151111
                 </li>
@@ -19,15 +19,14 @@
                     evolteam@gmail.com
                 </li>
             </ul>
-            <ul>
-                <li>Sản phẩm</li>
-                <li>Tin tức</li>
-                <li>Liên hệ</li>
+            <ul class="app_header_link">
+                <li><a href="">Sản phẩm</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Liên hệ</a></li>
             </ul>
-            <ul>
-                <li><a th:href="@{|/sign-up|}" style="color: #000; text-decoration: none;">Đăng ký</a></li><span style="color:#86A8E7;">|</span>
-                <li><a th:href="@{|/login|}" style="color: #000; text-decoration: none;">Đăng nhập</a> </li>
-                    
+            <ul class="app_header_login">
+                <li><a th:href="@{|/sign-up|}" >Đăng ký</a></li><span style="color:#86A8E7;">|</span>
+                <li><a th:href="@{|/login|}" >Đăng nhập</a> </li>       
             </ul>
         </div>
         <hr style="border: 1px solid #86A8E7;margin-top:5px; margin-bottom:0;">
@@ -35,7 +34,6 @@
             <div class="container-fluid">
                 <ul class="row">
                     <li class="col-md-2">
-
                         <a class="navbar-brand" th:href="@{|/home/index|}">
                             <img th:src="@{/images/logo/logoshop.png}" alt="" width="30" height="24"
                             class="d-inline-block align-text-top">
@@ -43,7 +41,6 @@
                         </a>
                     </li>
                     <li class="col-md-9">
-
                         <div class="input-group app_header_nav--search">
                             <select style="background-color: #fff;" name="categories" class="input-group-text" id="basic-addon1">
                                 <option>All Categories </option>
@@ -52,9 +49,13 @@
                             aria-describedby="basic-addon1"/>
                         </div>
                     </li>
-                    <li class="col-md-1">
-
-                        <img th:src="@{/images/design/cart.png}" alt="">
+                    <li class="col-md-1 header_nav_cart">
+                        <a href="/cart">
+                            <img th:src="@{/images/design/cart.png}" alt="">
+                        </a>
+                        <ul class="header_nav_cart--list">
+                            <li><img src="/images/design/empty_cart.png" alt=""></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
