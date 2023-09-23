@@ -13,8 +13,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="Authorities")
-public class Authorize {
+@Table(name="authorities")
+public class Authority {
     @Id
     private String id;
     @ManyToOne

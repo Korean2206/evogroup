@@ -29,7 +29,7 @@ public class User {
 
     @JsonIgnore
     @OneToMany(mappedBy = "user")
-    private List<Authorize> authorities;
+    private List<Authority> authorities;
     @JsonIgnore
     @OneToMany(mappedBy = "user")
     private List<Order> orders;

@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="Colors")
+@Table(name="colors")
 public class Color {
     @Id
     private String id;

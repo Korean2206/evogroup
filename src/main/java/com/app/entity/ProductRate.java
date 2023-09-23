@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="Product_rates")
+@Table(name="product_rates")
 public class ProductRate {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -25,9 +25,11 @@ public class ProductRate {
     private int id;
     private Date rate_date;
     @ManyToOne
-    @JoinColumn(name="username")
+    @JoinColumn(name="customer_id")
     private User user;
     private String rate_comment;
     private int rating;
+    @ManyToOne
+    @JoinColumn(name="product_variant_id")
     private ProductVariant productVariant;   
 }
