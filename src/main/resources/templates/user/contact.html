@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/user/layout/layout::areas(~{::title},~{::main})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolshop - Liên hệ</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <img src="/images/banner/contact.png" alt="contact">
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="contact-logo">
+                        <img src="/images/logo/logoshop.png" alt="">
+                        <p class="contact-title">
+                            Evol Store
+                        </p>
+                    </div>
+                    <ul class="contact-infor">
+                        <li><i style="color: #7F7FD5;" class="fa fa-phone" aria-hidden="true"></i>
+                            0862151111
+                        </li>
+                        <li><i style="color: #7F7FD5;" class="fa fa-envelope" aria-hidden="true"></i>
+                            evolteam@gmail.com
+                        </li>
+                        <li><i class="bi bi-facebook" style="color: #4267B2;"></i>facebook.com/kiet.gip</li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <p class="contact-description">
+                        Chúng tôi mong muốn lắng nghe ý kiến của khách hàng. Vui lòng gửi yêu cầu hoặc thắc mắc theo thông tin bên dưới. Chúng tôi sẽ liên lạc cho bạn sớm nhất có thể.
+                    </p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputFullname" class="form-label">HỌ VÀ TÊN*</label>
+                            <input type="text" class="form-control" id="inputFullname">
+                          </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">EMAIL*</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="inputPhone" class="form-label">ĐIỆN THOẠI*</label>
+                          <input type="text" class="form-control" id="inputPhone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputDescription" class="form-label">NỘI DUNG*</label>
+                            <textarea  class="form-control" id="inputDescription">
+                            </textarea>
+                          </div>
+                        <button type="submit" class="btn" style="color: #fff; background-color: #7F7FD5; float: right;">Gửi đi</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

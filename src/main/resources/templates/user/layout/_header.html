@@ -21,8 +21,8 @@
             </ul>
             <ul class="app_header_link">
                 <li><a href="">Sản phẩm</a></li>
-                <li><a href="">Tin tức</a></li>
-                <li><a href="">Liên hệ</a></li>
+                <li><a th:href="@{|/news|}">Tin tức</a></li>
+                <li><a th:href="@{|/contact|}">Liên hệ</a></li>
             </ul>
             <ul class="app_header_login">
                 <li><a th:href="@{|/sign-up|}" >Đăng ký</a></li><span style="color:#86A8E7;">|</span>
@@ -43,7 +43,7 @@
                     <li class="col-md-9">
                         <div class="input-group app_header_nav--search">
                             <select style="background-color: #fff;" name="categories" class="input-group-text" id="basic-addon1">
-                                <option>All Categories </option>
+                                <option>Danh mục </option>
                             </select>
                             <input type="text" id="header_nav--search" class="form-control" placeholder="Tìm kiếm sản phẩm" aria-label="search"
                             aria-describedby="basic-addon1"/>

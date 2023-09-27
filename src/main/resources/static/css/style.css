@@ -264,3 +264,46 @@ table.cart_table td, th  {
 }
 
 /* end cart */
+
+/* begin news */
+
+.text-wrap--2{
+
+    display: -webkit-box;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-line-clamp: 2;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+    /* end news */
+
+/* begin contact */
+.contact-infor {
+    padding: 0;
+    list-style: none;
+}
+.contact-infor > li {
+    padding: 10px;
+}
+.contact-logo {
+    text-align: center;
+}
+.contact-logo > img {
+    width: 50%;
+}
+.contact-title {
+    color: #7F7FD5;
+}
+/* end contact */
+
+/* begin product */
+
+.product-detail {
+    text-decoration: none;
+}
+
+/* end product */

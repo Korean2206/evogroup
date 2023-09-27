@@ -39,43 +39,43 @@
                         <li><span>
                                 <img src="/images/design/t-shirt.png" alt="">
                             </span>
-                            T-Shirt
+                            Áo thun
                         </li>
                         <li><span>
                                 <img src="/images/design/jacket.png" alt="">
                             </span>
-                            jacket</li>
+                            Áo khoác</li>
                         <li><span>
 
                                 <img src="/images/design/jeans.png" alt="">
                             </span>
-                            Jeans</li>
+                            Quần</li>
                         <li><span>
 
                                 <img src="/images/design/shoes.png" alt="">
                             </span>
-                            Shoes</li>
+                            Giày</li>
                         <li><span>
 
                                 <img src="/images/design/bag.png" alt="">
                             </span>
-                            Bag</li>
+                            Túi</li>
                         <li><span>
 
                                 <img src="/images/design/watches.png" alt="">
                             </span>
-                            Watches</li>
+                            Đồng hồ</li>
                         <li><span class="all-category">
 
                             <i class="bi bi-grid" style="font-size:20px; color:#D9D9D9;"></i>
                             </span>
-                            All Category</li>
+                            Danh mục</li>
                     </ul>
                 </nav>
             </div>
             <section class="section-product">
                 <div class="row" style="margin-bottom: 15px;">
-                    <span style="font-size:30px;font-weight: bold;">Todays For you</span>
+                    <span style="font-size:30px;font-weight: bold;">Dành cho bạn:</span>
                 </div>
                 <div class="row mb-5">
                     <div class="col-md-3" >
@@ -97,17 +97,19 @@
                           </div>
                     </div>
                     <div class="col-md-3" >
-                        <div class="card" >
-                            <img src="/images/product/product1.png" style="height:200px;" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title" style="width: 100%; 
+                        <a class="product-detail" th:href="@{|/detail|}">
+                            <div class="card" >
+                                <img src="/images/product/product1.png" style="height:200px;" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="width: 100%; 
                               overflow: hidden; 
                               white-space: nowrap;
                               text-overflow: ellipsis;">[[${p.productName}]]</h5>
                               <p class="card-text"><i class="bi bi-star-fill checked"></i>4.9<span style="margin-left: 15px;font-size:11;color: #868686;font-weight: regular;">13 sold</span></p>
                               <p class="card-text" style="font-size:20px;font-weight: bold;">[[${p.price}]] VNĐ</p>
                             </div>
-                          </div>
+                        </div>
+                    </a>
                     </div>
                     <div class="col-md-3" >
                         <div class="card" >
