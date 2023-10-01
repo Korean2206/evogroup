@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolshop - Quản lý thông tin</title>
+</head>
+
+<body>
+    <section class="col-md-4"  th:fragment="section">
+        <ul class="management-menu">
+            <li style="display: flex; align-items: center">
+                <img class="cust-avatar" src="/images/users/avatar2.png" alt=""> <span class="cust-fullname ms-3">Tên
+                    người dùng</span>
+            </li>
+            <li><a class="management-link" th:href="@{|/management/profile|}">
+                    <i class="bi bi-person-circle"></i>
+                    Quản lý tài khoản
+                </a>
+            </li>
+            <li><a class="management-link" th:href="@{|/management/order|}">
+                    <i class="bi bi-menu-up"></i>
+                    Quản lý đơn hàng
+                </a>
+            </li>
+            <li> <a class="management-link" th:href="@{|/management/address|}">
+
+                    <i class="bi bi-geo-alt"></i>
+                    Danh sách địa chỉ
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+
+</body>
+
+</html>

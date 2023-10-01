@@ -2,7 +2,7 @@ let mybutton = document.getElementById("back-to-top");
 
 
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -12,27 +12,24 @@ function scrollFunction() {
   }
 }
 
-var backToTopEvent = function() {
-    document.body.scrollTop = 0; // for safari
-    document.documentElement.scrollTop = 0; // for chrome
+var backToTopEvent = function () {
+  document.body.scrollTop = 0; // for safari
+  document.documentElement.scrollTop = 0; // for chrome
 }
 
 
-// quantity 
 
-const plusBtn = document.getElementById("plus");
-const minusBtn = document.getElementById("minus");
-const inputQuantity = document.getElementById("inputQuantity");
 
-plusBtn.addEventListener("click", evt => {
-  evt.preventDefault();
-  const currentValue = Number(inputQuantity.value) || 0;
-  inputQuantity.value = currentValue + 1;
-})
-minusBtn.addEventListener("click", evt => {
-  evt.preventDefault();
-  if(inputQuantity.value > 1){
-    const currentValue = Number(inputQuantity.value) || 0;
-    inputQuantity.value = currentValue - 1;
+// management 
+const currentLocation = location.href;
+console.log(currentLocation);
+const menuItem = document.getElementsByClassName("management-link");
+const menuLength = menuItem.length;
+for (let i = 0; i < menuLength; i++) {
+  if (menuItem[i].href === currentLocation) {
+    console.log(menuItem[i].href)
+    menuItem[i].parentElement.className = "management-active";
   }
-})
+}
+
+
